@@ -10,14 +10,7 @@ export default function Cart() {
     setCart(storedCart);
   }, []);
 
-  // when click remove item remove from cart
-  const removeItem = (index) => {
-    const updatedCart = [...cart];
-    updatedCart.splice(index, 1);
-
-    localStorage.setItem("cart", JSON.stringify(updatedCart));
-    setCart(updatedCart);
-  };
+  
 
   return (
     <div className="p-6 bg-gray-100 min-h-screen">
